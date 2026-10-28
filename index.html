@@ -1,0 +1,707 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10100f">
+
+    <title>FoodFlow AI — Food, Flow & Freedom</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CINEMATIC RESTAURANT INTRO
+    =========================================== -->
+
+    <section id="intro" class="intro">
+        <div class="intro-glow"></div>
+
+        <div class="intro-scene">
+            <div class="restaurant-light"></div>
+
+            <div class="restaurant-sign">
+                FOODFLOW <span>AI</span>
+            </div>
+
+            <div class="restaurant-window"></div>
+
+            <div class="intro-table">
+                <div class="intro-plate">🍕</div>
+            </div>
+
+            <div class="intro-door intro-door-left"></div>
+            <div class="intro-door intro-door-right"></div>
+
+            <div class="intro-copy">
+                <p class="eyebrow">A NEW WAY TO ORDER</p>
+
+                <h1>
+                    Good food.<br>
+                    <span>Zero chaos.</span>
+                </h1>
+
+                <p>Your cravings have found their flow.</p>
+
+                <button id="enterButton" class="primary-button" type="button">
+                    Enter FoodFlow <span>↗</span>
+                </button>
+            </div>
+        </div>
+
+        <button id="skipIntro" class="skip-intro" type="button">
+            Skip intro ↗
+        </button>
+    </section>
+
+
+    <!-- ==========================================
+         MAIN WEBSITE
+    =========================================== -->
+
+    <div id="website" class="website">
+
+        <!-- NAVIGATION -->
+
+        <header class="topbar">
+            <a href="#" class="brand">
+                <span class="brand-icon">F.</span>
+                <span>FoodFlow<span class="brand-ai"> AI</span></span>
+            </a>
+
+            <nav>
+                <a href="#meal-agent">Meal Agent</a>
+                <a href="#support">Customer Care</a>
+                <a href="#policies">Policies</a>
+            </nav>
+
+            <a href="#meal-agent" class="nav-cta">
+                Find my meal ↗
+            </a>
+        </header>
+
+
+        <main>
+
+            <!-- ==================================
+                 HERO SECTION
+            =================================== -->
+
+            <section class="hero">
+                <div class="hero-content">
+
+                    <div class="status-pill">
+                        <span class="status-dot"></span>
+                        YOUR PERSONAL FOOD ASSISTANT
+                    </div>
+
+                    <h1>
+                        Hungry mind.<br>
+                        <span>Happy wallet.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Tell us your budget, your mood, or your problem.
+                        FoodFlow AI helps you find meals and handle your
+                        food-ordering worries without the chaos.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#meal-agent" class="primary-button">
+                            Find my meal ↗
+                        </a>
+
+                        <a href="#support" class="secondary-button">
+                            Need help?
+                        </a>
+                    </div>
+
+                    <div class="hero-proof">
+                        <span>01 / PERSONALIZED</span>
+                        <span>02 / BUDGET-FIRST</span>
+                        <span>03 / CUSTOMER-FIRST</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+                    <div class="visual-orbit orbit-one"></div>
+                    <div class="visual-orbit orbit-two"></div>
+
+                    <div class="food-art">🍜</div>
+
+                    <div class="floating-card floating-card-top">
+                        <span>YOUR BUDGET</span>
+                        <strong>₹150</strong>
+                    </div>
+
+                    <div class="floating-card floating-card-bottom">
+                        <span>YOUR NEXT MEAL</span>
+                        <strong>Made for you ✦</strong>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ==================================
+                 CUSTOMER PROBLEM STATEMENT
+            =================================== -->
+
+            <section class="section problem-section">
+                <div class="section-heading">
+                    <p class="eyebrow">LESS REPETITION. MORE SATISFACTION.</p>
+
+                    <h2>
+                        Your needs remembered.<br>
+                        <span>Your problems simplified.</span>
+                    </h2>
+
+                    <p>
+                        No need to repeat your preferences every time.
+                        Get budget-friendly meal suggestions and simple
+                        guidance for common food-ordering problems.
+                    </p>
+                </div>
+
+                <div class="problem-grid">
+
+                    <article class="problem-card">
+                        <span class="problem-number">01</span>
+                        <div class="problem-icon">🧠</div>
+                        <h3>Remember me</h3>
+                        <p>
+                            Save your food preferences and budget on this
+                            device so you don't need to enter them again.
+                        </p>
+                    </article>
+
+                    <article class="problem-card">
+                        <span class="problem-number">02</span>
+                        <div class="problem-icon">💸</div>
+                        <h3>Budget comes first</h3>
+                        <p>
+                            Discover meal ideas that fit your spending limit
+                            instead of browsing without direction.
+                        </p>
+                    </article>
+
+                    <article class="problem-card">
+                        <span class="problem-number">03</span>
+                        <div class="problem-icon">💬</div>
+                        <h3>Help without chaos</h3>
+                        <p>
+                            Explore order tracking, complaint tickets,
+                            refund guidance and cancellation information.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+
+            <!-- ==================================
+                 MEAL AGENT
+            =================================== -->
+
+            <section id="meal-agent" class="section meal-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">YOUR PERSONAL MEAL AGENT</p>
+
+                    <h2>
+                        Craving something?<br>
+                        <span>Let's find your flow.</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you like, how you're feeling and
+                        how much you want to spend.
+                    </p>
+                </div>
+
+                <div class="meal-layout">
+
+                    <!-- PREFERENCES FORM -->
+
+                    <form id="mealForm" class="meal-form">
+
+                        <div class="form-heading">
+                            <span class="form-icon">✦</span>
+
+                            <div>
+                                <h3>Your food profile</h3>
+                                <p>Personalize your suggestions.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerName">
+                                What should we call you?
+                            </label>
+
+                            <input
+                                type="text"
+                                id="customerName"
+                                name="customerName"
+                                placeholder="Your name (optional)"
+                                autocomplete="given-name"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerBudget">
+                                Your budget (₹)
+                            </label>
+
+                            <input
+                                type="number"
+                                id="customerBudget"
+                                name="customerBudget"
+                                placeholder="e.g. 150"
+                                min="1"
+                                step="1"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerMood">
+                                What's your mood?
+                            </label>
+
+                            <select id="customerMood" name="customerMood">
+                                <option value="any">Surprise me</option>
+                                <option value="happy">Happy 😄</option>
+                                <option value="sad">Need comfort 😔</option>
+                                <option value="tired">Feeling tired 😴</option>
+                                <option value="stressed">Feeling stressed 😵</option>
+                                <option value="hungry">Super hungry 🤤</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="foodPreference">
+                                Food preference
+                            </label>
+
+                            <select id="foodPreference" name="foodPreference">
+                                <option value="both">Anything is fine</option>
+                                <option value="veg">Vegetarian 🌱</option>
+                                <option value="nonveg">Non-vegetarian 🍗</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dietaryNeed">
+                                What are you looking for?
+                            </label>
+
+                            <select id="dietaryNeed" name="dietaryNeed">
+                                <option value="none">No specific requirement</option>
+                                <option value="light">Something light</option>
+                                <option value="protein">Protein-rich options</option>
+                                <option value="spicy">Something spicy</option>
+                            </select>
+                        </div>
+
+                        <label class="remember-option">
+                            <input
+                                type="checkbox"
+                                id="rememberMe"
+                                name="rememberMe"
+                            >
+
+                            <span>
+                                Remember my preferences on this device
+                            </span>
+                        </label>
+
+                        <p id="preferenceStatus" class="preference-status" aria-live="polite">
+                            Your preferences are ready to personalize.
+                        </p>
+
+                        <button class="primary-button meal-submit" type="submit">
+                            Find my meals <span>↗</span>
+                        </button>
+
+                    </form>
+
+
+                    <!-- MEAL SUGGESTIONS -->
+
+                    <div class="meal-results-panel">
+
+                        <div class="results-heading">
+                            <div>
+                                <p class="eyebrow">CURATED FOR YOUR CRAVINGS</p>
+                                <h3>Your meal matches</h3>
+                            </div>
+
+                            <span class="results-badge">AI MEAL AGENT</span>
+                        </div>
+
+                        <div id="mealResults" class="meal-results" aria-live="polite">
+                            <div class="empty-state">
+                                <span class="empty-icon">✦</span>
+                                <h3>Your next favourite starts here.</h3>
+                                <p>
+                                    Enter your budget and preferences.
+                                    We'll find suitable options from our demo menu.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="demo-note">
+                            <span>ⓘ</span>
+                            <p>
+                                This prototype uses illustrative menu items
+                                and prices. It does not place real orders or
+                                check live restaurant availability.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ==================================
+                 CUSTOMER SUPPORT
+            =================================== -->
+
+            <section id="support" class="section support-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">WE'RE HERE TO HELP</p>
+
+                    <h2>
+                        Order trouble?<br>
+                        <span>Let's sort it out.</span>
+                    </h2>
+
+                    <p>
+                        Find sample order statuses, create a demo support
+                        ticket or get guidance for common issues.
+                    </p>
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="quick-actions">
+
+                    <button id="trackButton" class="action-card" type="button">
+                        <span class="action-icon">📦</span>
+                        <span class="action-title">Track an order</span>
+                        <span class="action-description">
+                            Check a sample order status.
+                        </span>
+                        <span class="action-arrow">↗</span>
+                    </button>
+
+                    <button id="ticketButton" class="action-card" type="button">
+                        <span class="action-icon">📝</span>
+                        <span class="action-title">Report a problem</span>
+                        <span class="action-description">
+                            Create a demo support ticket.
+                        </span>
+                        <span class="action-arrow">↗</span>
+                    </button>
+
+                    <button id="humanButton" class="action-card" type="button">
+                        <span class="action-icon">🤝</span>
+                        <span class="action-title">Human support</span>
+                        <span class="action-description">
+                            See available support guidance.
+                        </span>
+                        <span class="action-arrow">↗</span>
+                    </button>
+
+                </div>
+
+
+                <!-- ACTION RESULT -->
+
+                <div
+                    id="actionResult"
+                    class="action-result"
+                    aria-live="polite"
+                >
+                    <span class="result-icon">✦</span>
+                    <p>
+                        Choose a quick action above to get started.
+                        All results are demo-only.
+                    </p>
+                </div>
+
+
+                <!-- SUPPORT CHAT -->
+
+                <div class="support-chat">
+
+                    <div class="chat-header">
+                        <div class="chat-avatar">F.</div>
+
+                        <div>
+                            <h3>FoodFlow Assistant</h3>
+                            <p>
+                                <span class="status-dot"></span>
+                                Prototype assistant
+                            </p>
+                        </div>
+
+                        <span class="chat-label">DEMO</span>
+                    </div>
+
+                    <div id="chatMessages" class="chat-messages" aria-live="polite">
+
+                        <div class="bot-message">
+                            Hey there! 👋 I'm your FoodFlow assistant.
+                            Ask me about order tracking, delays, missing
+                            items, refunds, cancellations or meal ideas.
+                        </div>
+
+                    </div>
+
+                    <form id="chatForm" class="chat-form">
+
+                        <label class="sr-only" for="userMessage">
+                            Type your message
+                        </label>
+
+                        <input
+                            type="text"
+                            id="userMessage"
+                            name="userMessage"
+                            placeholder="Tell us what's on your mind..."
+                            autocomplete="off"
+                            required
+                        >
+
+                        <button class="primary-button" type="submit">
+                            Send ↗
+                        </button>
+
+                    </form>
+
+                    <p class="chat-disclaimer">
+                        Demo assistant only. No live agent or restaurant
+                        support system is connected.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================
+                 REFUND AND CANCELLATION POLICIES
+            =================================== -->
+
+            <section id="policies" class="section policies-section">
+
+                <div class="section-heading">
+                    <p class="eyebrow">CLEAR RULES. LESS CONFUSION.</p>
+
+                    <h2>
+                        Know your options.<br>
+                        <span>Before you decide.</span>
+                    </h2>
+
+                    <p>
+                        Explore prototype guidance for refunds and
+                        cancellation. Actual eligibility depends on the
+                        restaurant or platform's applicable terms.
+                    </p>
+                </div>
+
+
+                <div class="policy-grid">
+
+                    <!-- REFUND POLICY -->
+
+                    <article class="policy-card">
+
+                        <div class="policy-top">
+                            <span class="policy-icon">↩</span>
+                            <span class="policy-label">POLICY 01</span>
+                        </div>
+
+                        <h3>Refund guidance</h3>
+
+                        <p>
+                            Received a missing, damaged or incorrect item?
+                            Report the problem promptly and keep your order
+                            details ready.
+                        </p>
+
+                        <ul>
+                            <li>Keep your order ID available.</li>
+                            <li>Clearly describe the issue.</li>
+                            <li>Check the actual platform's refund terms.</li>
+                        </ul>
+
+                        <button
+                            id="refundButton"
+                            class="secondary-button policy-button"
+                            type="button"
+                        >
+                            View refund guidance ↗
+                        </button>
+
+                        <div
+                            id="refundResult"
+                            class="policy-result"
+                            aria-live="polite"
+                        ></div>
+
+                    </article>
+
+
+                    <!-- CANCELLATION POLICY -->
+
+                    <article class="policy-card">
+
+                        <div class="policy-top">
+                            <span class="policy-icon">✕</span>
+                            <span class="policy-label">POLICY 02</span>
+                        </div>
+
+                        <h3>Cancellation guidance</h3>
+
+                        <p>
+                            Cancellation eligibility may depend on order
+                            status and whether food preparation has started.
+                        </p>
+
+                        <ul>
+                            <li>Check your order status first.</li>
+                            <li>Review the applicable cancellation terms.</li>
+                            <li>Don't assume a refund is guaranteed.</li>
+                        </ul>
+
+                        <button
+                            id="cancelButton"
+                            class="secondary-button policy-button"
+                            type="button"
+                        >
+                            View cancellation guidance ↗
+                        </button>
+
+                        <div
+                            id="cancellationResult"
+                            class="policy-result"
+                            aria-live="polite"
+                        ></div>
+
+                    </article>
+
+                </div>
+
+                <div class="policy-disclaimer">
+                    <span>ⓘ</span>
+
+                    <p>
+                        FoodFlow AI is a hackathon prototype. These are
+                        general illustrative guidelines, not a real
+                        restaurant's official refund or cancellation policy.
+                        No real refund or cancellation can be processed.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <!-- ==================================
+                 FINAL CALL TO ACTION
+            =================================== -->
+
+            <section class="final-cta">
+
+                <p class="eyebrow">YOUR FOOD. YOUR BUDGET. YOUR FLOW.</p>
+
+                <h2>
+                    Less food-ordering stress.<br>
+                    <span>More room to enjoy.</span>
+                </h2>
+
+                <p>
+                    Start with your budget. Let your cravings take it from there.
+                </p>
+
+                <a href="#meal-agent" class="primary-button">
+                    Find my next meal ↗
+                </a>
+
+            </section>
+
+        </main>
+
+
+        <!-- ======================================
+             FOOTER
+        ======================================= -->
+
+        <footer class="footer">
+
+            <a href="#" class="brand">
+                <span class="brand-icon">F.</span>
+                <span>FoodFlow<span class="brand-ai"> AI</span></span>
+            </a>
+
+            <p>
+                Built with ❤️ by Team OriginX
+                <br>
+                Code E Fiesta 2026 · Hackathon Prototype
+            </p>
+
+            <p class="footer-note">
+                Demo experience only. No live restaurant integration.
+            </p>
+
+        </footer>
+
+    </div>
+<!-- FOODFLOW COMMAND CENTER -->
+
+<button id="ff-command-toggle" type="button" aria-expanded="false">
+    ✦ FOODFLOW
+</button>
+
+<div id="ff-command-panel" aria-hidden="true">
+    <div class="ff-command-header">
+        <div>
+            <span class="ff-command-tag">ORIGINX INTELLIGENCE</span>
+            <h2>Command Center</h2>
+            <p>What are you craving today?</p>
+        </div>
+        <button id="ff-command-close" type="button" aria-label="Close panel">✕</button>
+    </div>
+
+```
+<div class="ff-command-grid">
+    <button type="button" data-ff-action="budget">💸<span>Budget Meals</span></button>
+    <button type="button" data-ff-action="mood">❤️<span>Mood Food</span></button>
+    <button type="button" data-ff-action="surprise">🎲<span>Surprise Me</span></button>
+    <button type="button" data-ff-action="refund">🛡️<span>Refund Policy</span></button>
+</div>
+
+<div id="ff-command-message" role="status" aria-live="polite">
+    <span>✦</span> Your food journey starts here.
+</div>
+```
+
+</div>
+</body>
+</html>
